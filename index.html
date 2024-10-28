@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LLAMA EL CSS DESKTOP -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- LLAMA EL CSS DE MOVIL -->
+    <link rel="stylesheet" href="css/movil.css">
+    <!-- LLAMA EL CSS DE FANCYBOX.CSS -->
+    <link rel="stylesheet" href="css/fancybox.css">
+    <!-- LLAMA EL CSS DE ANIMATE.CSS PARA WOW.JS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- LLAMA EL SCRIPT DE JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- LLAMA EL SCRIPT DE WOW.JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- LLAMA EL SCRIPT DE RESPONSIVESLIDES.JS -->
+    <script src="js/responsiveslides.js"></script>
+    <!-- LLAMA EL SCRIPT DE FANCYBOX.JS -->
+    <script src="js/fancybox.js"></script>
+    <!-- LLAMA EL SCRIPT DE FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/228ea9976a.js" crossorigin="anonymous"></script>
+    <title>PROFIT</title>
+</head>
+<body>
+    <!-- STRUCT THE HEADER -->
+    <header class="ancho">
+        <figure>
+            <img src="img/logo.png" alt="Logo Inicio">
+        </figure>
+        <nav>
+            <div class="menu" id="iconomenu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul id="contenedormenu">
+                <li><a href="#">home</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#galery">gallery</a></li>
+                <li><a href="#">coaches</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- STRUCT THE SLIDER -->
+    <section class="slides">
+        <ul class="rslides">
+            <li>
+                <img src="img/slide1.jpg" alt="">
+                <div class="txt-slide">
+                    <p class="title">best fitness</p><br>
+                    <p class="info_txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, hic.</p><br>
+                    <a href="#">join now</a>
+                </div>
+            </li>
+            <li>
+                <img src="img/slide2.jpg" alt="">
+                <div class="txt-slide">
+                    <p class="title">best fitness</p><br>
+                    <p class="info_txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, hic.</p><br>
+                    <a href="#">join now</a>
+                </div>
+            </li>
+            <li>
+                <img src="img/slide3.jpg" alt="">
+                <div class="txt-slide">
+                    <p class="title">best fitness</p><br>
+                    <p class="info_txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, hic.</p><br>
+                    <a href="#">join now</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- STRUCT THE SERVICES -->
+    <section class="services" id="services">
+        <h2>SERVICES</h2>
+        <div class="services-container">
+            <!-- CONTAINER LEFT WOW.JS -->
+            <div class="container_left animate__animated animate__delay-2s animate__fadeInLeft">
+                <article class="service-item">
+                    <div class="icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>QUALITY SERVICE</h3>
+                    <p>At our fitness studio, you can experience the best level of customer service.</p>
+                </article>
+                <article class="service-item">
+                    <div class="icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>SPACIOUS GYM</h3>
+                    <p>Our gym has enough place for all kinds of workouts and a wide variety of equipment.</p>
+                </article>
+            </div>
+            <!-- CONTAINER RIGHT WOW.JS -->
+            <div class="container_right animate__animated animate__delay-2s animate__fadeInRight">
+                <article class="service-item">
+                    <div class="icon">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+                    <h3>UNIQUE FITNESS PROGRAMS</h3>
+                    <p>Our coaches have developed more than 50 fitness programs and workouts for you.</p>
+                </article>
+                <article class="service-item">
+                    <div class="icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>GROUP CLASSES</h3>
+                    <p>If you prefer training with friends, then our group classes have what you need.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- STRUCT THE GALERY -->
+    <section class="container_galery ancho" id="galery">
+        <div class="galery">
+            <!-- FIGURA 1 -->
+            <a href="img/foto1.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                <figure class="fotos">
+                    <img src="img/foto1.jpg" alt="">
+                </figure>
+            </a>
+            <!-- FIGURA 3 -->
+            <a href="img/foto3.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                <figure class="fotos">
+                    <img src="img/foto3.jpg" alt="">
+                </figure>
+            </a>
+            <!-- FIGURA 4 -->
+            <a href="img/foto4.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                <figure class="fotos">
+                    <img src="img/foto4.jpg" alt="">
+                </figure>
+            </a>
+            <!-- FIGURA 2 -->
+            <a href="img/foto2.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                <figure class="fotos">
+                    <img src="img/foto2.jpg" alt="">
+                </figure>
+            </a>
+        </div>
+        <div class="info">
+            <div class="center">
+                <h2>galery <span>fitness</span> club</h2><br>
+                <p>Profit is the fitness club that makes fitness totally accessible to everybody. We promise to help people from all walks of life achieve their individual health and fitness goals — no matter their shape, age, and experience.</p><br>
+                <a href="#">join now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- STRUCT THE ARROW -->
+    <div class="flecha_arriba">
+        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
+    <!-- STRUCT THE FOOTER -->
+    <footer class="ancho">
+        <div class="copy">
+            <p>&copy; 2020 profit. privacity policy</p>
+        </div>
+        <div class="networks">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // SCRIPT THE MENU
+        $("#iconomenu").click(function(){
+            $("#contenedormenu").toggleClass('abrir_menu');
+        });
+
+        // SCRIPT THE RESPONSIVESLIDES.JS
+        $(function() {
+            $(".rslides").responsiveSlides({
+                speed: 500,       // Velocidad de la transición
+                timeout: 5000,    // Tiempo en milisegundos entre slides
+                pause: true,      // Pausa al pasar el mouse sobre el slider
+                hover: true,      // Permite que el mouse pause el slider
+            });
+        });
+
+        // SCRIPT THE FANCYBOX.JS
+        Fancybox.bind('[data-fancybox="gallery"]', {
+        // Your custom options for a specific gallery
+        });
+    </script>
+</body>
+</html>

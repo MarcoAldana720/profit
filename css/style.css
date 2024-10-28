@@ -1,0 +1,358 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #FF4048;
+    --secondary-color: #F5F5F5;
+}
+
+body {
+    font-family: helvetica;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+
+/* STYLE THE MENU */
+header {
+    /* border: 1px red solid; */
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header figure {
+    /* border: 1px red solid; */
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+header figure img {
+    width: 100%;
+    height: 100%;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-transform: uppercase;
+}
+
+header ul li a {
+    display: inline-block;
+    padding: 5px;
+    color: #333;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    border-bottom: 2px var(--primary-color) solid;
+}
+
+.menu{
+    width: 40px;
+    height: 40px;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+
+.menu i {
+    font-size: 25px;
+}
+
+/* STYLE THE SLIDER */
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    max-width: 100%;
+    min-height: 100vh;
+    /* border: 1px red solid; */
+    padding: 0;
+    margin: auto;
+    max-width: 100%;
+}
+
+.rslides li {
+    backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    border: 0;
+    object-fit: cover;
+}
+
+.slides {
+    position: relative;
+}
+
+.txt-slide {
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 9;
+    padding: 10px;
+    width: auto;
+    max-width: 30%;
+}
+
+.title {
+    font-size: 40px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.txt-slide a {
+    /* border: 1px red solid; */
+    padding: 15px 20px;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+/* STYLE THE SERVICES */
+.services {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.services h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.services-container {
+    /* border: 1px green solid; */
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.container_left {
+    /* border: 1px red solid; */
+    width: 45%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container_right {
+    /* border: 1px red solid; */
+    width: 45%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    /* border: 1px blue solid; */
+    flex: 1;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+}
+
+.service-item .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 1px solid #AAA;
+    padding: 20px;
+    border-radius: 8px;
+    width: 70px;
+    margin: auto;
+}
+
+.service-item .icon i {
+    color: var(--primary-color);
+    font-size: 25px;
+}
+
+.service-item h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.service-item p {
+    /* color: #666; */
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+/* STYLE THE GALERY */
+.container_galery {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    background-color: var(--secondary-color);
+}
+
+.fotos {
+    /* border: 1px red solid; */
+    max-width: 403.7px;
+    max-height: 403.7px;
+}
+
+.fotos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.galery {
+    /* border: 1px blue solid; */
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info {
+    /* border: 1px blue solid; */
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.center {
+    /* border: 1px red solid; */
+    max-width: 100%;
+}
+
+.center h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1.3;
+}
+
+.center span {
+    font-weight: normal;
+}
+
+.center a {
+    /* border: 1px red solid; */
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+/* STYLE THE FOOTER */
+footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.copy {
+    /* border: 1px red solid; */
+    width: 215px;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 14px;
+}
+
+.networks {
+    /* border: 1px red solid; */
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.networks a {
+    border: 1px #AAA solid;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* STYLE THE ARROW */
+.flecha_arriba{
+    width: 40px;
+    height: 40px;
+    z-index: 200;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.flecha_arriba a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.flecha_arriba i {
+    color: white;
+}
